@@ -51,7 +51,6 @@ export default function ResponsiveDrawer(props: Props) {
         isOpen: true,
       });
     } else {
-      console.log('no password');
       handleJoinRoom(room);
     }
   };
