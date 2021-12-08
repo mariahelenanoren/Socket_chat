@@ -4,6 +4,8 @@ const http = require('http');
 const { Server } = require('socket.io');
 const port = process.env.PORT || 4000;
 
+const router = require('./router');
+
 const app = express();
 app.use(express.static(path.join(__dirname, '../client/build')));
 
@@ -40,6 +42,8 @@ app.get('*', function (req, res) {
     root: path.join(__dirname, '../client/build/'),
   });
 });
+
+app.use(router);
 
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
