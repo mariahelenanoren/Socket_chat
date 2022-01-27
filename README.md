@@ -2,7 +2,7 @@
 
 ## A chat application built with Socket.io.
 
-### [Live demo](https://socket-app.netlify.app/chatroom)
+### [Live demo](https://socket-app.netlify.app/)
 
 **Tip! Try opening the website in two seperate tabs or windows and start a chat with yourself**
 
